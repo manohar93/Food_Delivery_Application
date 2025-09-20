@@ -1,0 +1,63 @@
+/* Main Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* Space between logo and profile image */
+  align-items: center;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #474d50, #6aadaf);  /* Purple gradient background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Soft shadow for 3D effect */
+  transition: background 0.3s ease, transform 0.3s ease;  /* Smooth transition */
+}
+
+/* Hover effect for Navbar */
+.navbar:hover {
+  transform: translateY(-8px);  /* Slight floating effect on hover */
+  background: linear-gradient(135deg, #6aadaf, #474d50);  /* Reverse gradient for hover effect */
+}
+
+/* Logo Styling */
+.logo {
+  width: 140px;  /* Adjust logo size */
+  transition: transform 0.3s ease, filter 0.3s ease;  /* Logo transitions */
+  cursor: pointer;  /* Cursor changes to pointer on hover */
+}
+
+/* Hover effect for Logo */
+.logo:hover {
+  transform: scale(1.1);  /* Slightly enlarge the logo */
+  filter: brightness(1.4);  /* Brighten the logo on hover */
+}
+
+/* Profile Image Styling */
+.profile {
+  width: 40px;  /* Profile image size */
+  height: 40px;
+  border-radius: 50%;  /* Circular profile image */
+  border: 2px solid #ecf0f1;  /* Light border */
+  transition: transform 0.3s ease, border-color 0.3s ease;  /* Smooth profile transitions */
+  cursor: pointer;  /* Cursor changes to pointer on hover */
+}
+
+/* Hover effect for Profile Image */
+.profile:hover {
+  border-color: #f39c12;  /* Bright orange border color on hover */
+  transform: scale(1.1);  /* Slightly enlarge the profile image */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 120px;  /* Adjust logo size for mobile */
+  }
+
+  .profile {
+    width: 35px;  /* Adjust profile image size for mobile */
+    height: 35px;
+  }
+}

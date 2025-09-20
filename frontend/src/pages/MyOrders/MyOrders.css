@@ -1,0 +1,76 @@
+.my-orders {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.my-orders h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.my-orders-order {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+.my-orders-order:hover {
+  transform: translateY(-5px);
+  background-color: #f4fbff;
+}
+
+.my-orders-order img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.my-orders-order p {
+  margin: 5px 0;
+  color: #34495e;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.my-orders-order p span {
+  color: green;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.my-orders-order p b {
+  text-transform: capitalize;
+  color: #2c3e50;
+}
+
+.my-orders-order button {
+  margin-top: 15px;
+  padding: 10px 16px;
+  background: linear-gradient(to right, #3498db, #2d88d4);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.my-orders-order button:hover {
+  background: linear-gradient(to right, #2c80c4, #2169b2);
+  transform: scale(1.05);
+}

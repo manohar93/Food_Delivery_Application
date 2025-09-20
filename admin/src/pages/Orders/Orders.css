@@ -1,0 +1,117 @@
+/* Title styling */
+.order-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* Optional spacing below title */
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.order.add {
+  display: flex;
+  flex-direction: column;  /* Stack elements vertically */
+  align-items: flex-start; /* Align children (title and items) to the left */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.order h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-header {
+  display: grid;
+  grid-template-columns: 50px 2fr 1fr 2fr 1fr 0.8fr 0.8fr 1fr;
+  background-color: #ecf0f1;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.order-item {
+  display: grid;
+  grid-template-columns: 50px 2fr 1fr 2fr 1fr 0.8fr 0.8fr 1fr;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size:20px;
+  gap:10px;
+}
+
+.order-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.order-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #34495e;
+}
+
+.order-item-food {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.order-item-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2d3436;
+}
+
+.order-item-phone {
+  font-size: 13px;
+  font-weight: 500;
+  color: #2980b9;
+}
+
+.order-col select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  background-color: #f5f6fa;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.order-col select:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #fff;
+}
+
+.order-col select option[value="Food Processing"] {
+  color: #e67e22;
+}
+
+.order-col select option[value="Out for delivery"] {
+  color: #f1c40f;
+}
+
+.order-col select option[value="Delivered"] {
+  color: #2ecc71;
+}

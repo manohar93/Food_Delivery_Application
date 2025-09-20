@@ -1,0 +1,60 @@
+.food-display {
+  margin-top: 30px;
+}
+
+.food-display h2 {
+  font-size: max(2vw, 24px);
+  font-weight: 600;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 30px;
+  row-gap: 50px;
+  margin-top: 30px;
+}
+
+.food-item {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.food-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px red;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.pagination button:disabled {
+  background-color: #ec3b3b;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 16px;
+}

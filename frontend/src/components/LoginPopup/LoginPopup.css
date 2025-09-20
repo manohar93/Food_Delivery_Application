@@ -1,0 +1,169 @@
+.login-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-popup-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 25px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.login-popup-title h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.login-popup-title img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.login-popup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-popup-inputs input {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-popup-inputs input:focus {
+  border-color: #5dade2;
+  box-shadow: 0 0 6px rgba(93, 173, 226, 0.4);
+}
+
+.captcha-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.captcha-image {
+  width: 180px;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.refresh-captcha-button {
+  background-color: #f0f0f0;
+  border: none;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #34495e;
+  transition: background-color 0.3s ease;
+}
+
+.refresh-captcha-button:hover {
+  background-color: #e0e0e0;
+}
+
+button[type="submit"] {
+  margin: 20px auto 0;
+  display: block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #5dade2;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3498db;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.login-popup-condition {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.login-popup-condition p {
+  font-size: 14px;
+  color: #555;
+}
+
+.login-popup-condition input {
+  transform: scale(1.2);
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
+
+p span {
+  color: #3498db;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+p span:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .login-popup-container {
+    padding: 20px;
+  }
+
+  .login-popup-title h2 {
+    font-size: 20px;
+  }
+
+  .login-popup-inputs input {
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+
+  .captcha-image {
+    width: 140px;
+    height: 50px;
+  }
+}
