@@ -35,11 +35,3 @@ This is a full-stack **food ordering web application** built using the **MERN st
 ### Prerequisites
 - Node.js
 - MongoDB
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/DulanjaliSenarathna/mern-food-delivery-app.git
-cd mern-food-delivery-app
-
-
